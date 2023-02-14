@@ -1,23 +1,106 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>1st Web Page</title>
+        <title>Web 1-02</title>
         <meta charset="utf-8">
     </head>
+
+    <style>
+        #header{
+            text-align: center;
+            height: 120px;
+            margin-top: 27px;      
+        }
+        .header_text{
+            color: black;
+            margin-right: 80px;
+            margin-left: 80px;
+        }
+        .header_text:hover{ color: red; }
+        .main_picture{ height: 464px;}
+        #logo{
+            margin-top: 0px;
+            padding-top: 33px;
+        }
+        
+        .icon_title_text{
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .icon_box{ 
+            width: 1240px;
+            height: 300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .icon_box1{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+        .chefs{ 
+            background-color: grey;
+            height: 304px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        p.chefs1{
+            width: 500px; height: 100px;   
+        }
+        img.chefs1{
+            width: 314px; height: 304px;
+        }
+    </style>
+
     <body>
-        <ol>
-            <li><a href="page1.html" target="_self">학력사항</a></li>
-            <li><a href="page2.html" target="_self">교육/연수</a></li>
-            <li><a href="page3.html" target="_self">수행 프로젝트</a></li>
-        </ol>
-        <h1>송민우</h1>
-        <p>
-        The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+        <div id="header">
+            <a href="#" target="_self" class="header_text">How it works</a>
+            <a href="#" target="_self" class="header_text">Gifts</a>
+            <a href="about.html" target="_self" class="header_text">About</a>
+            <img src="logo.png", id="logo" class="header_text">
+            <a href="#" target="_self" class="header_text">Login</a>
+            <a href="#" target="_self" class="header_text">Members</a>
+            <a href="#" target="_self" class="header_text">Contacts</a>
+        </div>
+
+        <div id="main_picture">
+            <img src="main.png">
+        </div>
+        
+        <p class="icon_title_text">
+            "WHAT'S FOR OWNER"<br>
+            <b>FINALLY HAS AN</b><br>
+            <b>EASY ANSWER</b>
         </p>
-        <img src="man.png" width="40%">
-        <p>
-        Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-        </p>
+        <div class="icon_box">
+            <div class="icon_box1"><p><img src="icon1.png"><br>1. 재료</p></div>
+            <div class="icon_box1"><p><img src="icon2.png"><br>2. 기발</p></div>
+            <div class="icon_box1"><p><img src="icon3.png"><br>3. 시간</p></div>
+            <div class="icon_box1"><p><img src="icon4.png"><br>4. 위치</p></div>   
+        </div>
+
+        <div class="chefs">
+            <p class="chefs1">
+                전시를 관람한 후 카페의 야외테라스에서 한잔의 차를 마시고, 아카데미에서 문화강의를 듣고, 
+                저녁엔 미술관속 레스토랑에서 모임을 갖고 맛있는 음식을 맛볼 수 있는 HIDE PARK는 
+                카페&레스토랑이기에 앞서 예술을 직접 체험하는 곳, 예술과 삶을 묶어주는 공간이 되려는 
+                희망으로 오랜 산고를 거쳐 2008년 10월 8일에 오픈하였습니다. 이러한 배경에서 만들어진 
+                HIDEPARK는 누구에게나 편안한 보금자리같은 따뜻함이 느껴지는 동시에, 세련된 인테리어와 음악으로 
+                감미로운 매력을 발산합니다.
+            </p>
+            <img src="chef.png" class="chefs1">
+        </div>
+        
+
     </body>
 </html>
-
