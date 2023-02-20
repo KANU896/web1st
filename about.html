@@ -17,13 +17,22 @@
             background-image: url(chef_about.png);
             width: 750px; height: 500px;
         }
+        .top_box_background{
+            width: 250px; height: 250px;
+            margin-top: 250px;
+            background-color: rgba(20, 144, 46, 0.6);
+            display: flex;
+            justify-content: center;
+        }
         #top_box{
             width: 210px; height: 210px;
-            margin-top: 290px;
             text-align: left;
-            background-color: rgba(20, 144, 46, 0.6);
         }
-        .top_right{ width: 250px; height: 500px; }
+        .top_right{ 
+            display: flex;
+            flex-wrap: wrap;
+            width: 250px; height: 500px; 
+        }
 
 
         #box_all{ 
@@ -37,13 +46,32 @@
             width: 750px; height: 500px;
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-around;
         }
-        .box{ width: 250px; height: 250px; }
-        .box1{ background-color: rgb(127, 104, 21); }
-        .box2{ background-color: rgb(255, 123, 0); }
-        .box_right{
+        .box1{ 
+            width: 250px; height: 250px;
+            background-color: rgb(127, 104, 21); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box2{ 
+            width: 250px; height: 250px;
+            background-color: rgb(255, 123, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        .box{ width: 210px; height: 210px; }
+        .box3{
             width: 250px; height: 500px;
             background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        .box_right{
+            width: 210px; height: 460px;
         }
 
 
@@ -66,31 +94,35 @@
     <body>
         <div id="top">
             <div class="top_left">
-                <div id="top_box">
-                    <h4>GLOBAL<br>BUSINESS</h4>
-                    <p>부모 요소인 div.container를 Flex Container(플렉스 컨테이너)라고 부르고,
-                        자식 요소인 div.item들을 Flex Item(플렉스 아이템)이라고 부릅니다.
-                    </p>
+                <div class="top_box_background">
+                    <div id="top_box">
+                        <h4>GLOBAL<br>BUSINESS</h4>
+                        <p>부모 요소인 div.container를 Flex Container(플렉스 컨테이너)라고 부르고,
+                            자식 요소인 div.item들을 Flex Item(플렉스 아이템)이라고 부릅니다.
+                        </p>
+                    </div>
                 </div>
+                
             </div>
 
             <div class="top_right">
-                <img src="right1.png" alt="">
-                <img src="right2.png" alt="">
+                <img src="right1.png">
+                <img src="right2.png">
             </div>
         </div>
 
         <div id="box_all">
             <div class="box_left">
-                <div class="box box1">1</div>
-                <div class="box box2">2</div>
-                <div class="box box1">3</div>
-                <div class="box box2">4</div>
-                <div class="box box1">5</div>
-                <div class="box box2">6</div>
+                <div class="box1"><div class="box">1</div></div>
+                <div class="box2"><div class="box">2</div></div>
+                <div class="box1"><div class="box">3</div></div>
+                <div class="box2"><div class="box">4</div></div>
+                <div class="box1"><div class="box">5</div></div>
+                <div class="box2"><div class="box">6</div></div>
             </div>
 
-            <div class="box_right"> 7 </div>
+            <div class="box3"><div class="box_right">7</div></div>
+            
         </div>
 
         <div id="footer">

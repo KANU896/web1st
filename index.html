@@ -8,24 +8,32 @@
     <style>
         #header{
             text-align: center;
-            height: 120px;
-            margin-top: 27px;      
+            height: 120px;    
         }
         .header_text{
             color: black;
+            text-decoration-line: none;
             margin-right: 80px;
             margin-left: 80px;
         }
-        .header_text:hover{ color: red; }
-        .main_picture{ height: 464px;}
+        .header_text:hover{ 
+            color: red; 
+            text-decoration: underline;
+        }
         #logo{
             margin-top: 0px;
             padding-top: 33px;
         }
+        .main_picture{ height: 464px;}
+        
         
         .icon_title_text{
             text-align: center;
             margin-top: 30px;
+        }
+        .icon_title_text1{
+            text-align: center;
+            font-size: 30px;
         }
         
         .icon_box{ 
@@ -34,7 +42,7 @@
             margin: 0 auto;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
             
         }
         .icon_box1{
@@ -79,8 +87,8 @@
         
         <p class="icon_title_text">
             "WHAT'S FOR OWNER"<br>
-            <b>FINALLY HAS AN</b><br>
-            <b>EASY ANSWER</b>
+            <div class="icon_title_text1"><b>FINALLY HAS AN<br>
+            EASY ANSWER</b></div>
         </p>
         <div class="icon_box">
             <div class="icon_box1"><p><img src="icon1.png"><br>1. 재료</p></div>
